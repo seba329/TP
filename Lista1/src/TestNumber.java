@@ -1,6 +1,4 @@
 import junit.framework.TestCase;
-import junit.framework.Test;
-import junit.framework.TestSuite;
 public class TestNumber extends TestCase {
 
 	private Number li;
@@ -17,23 +15,7 @@ public class TestNumber extends TestCase {
 		li = new Number(16);
 	}
 
-	protected void tearDown() throws Exception {
-		li = null;
-	}
-	
-	public static Test suite() {
-		TestSuite suite = new TestSuite();
-		suite.addTest(new TestNumber("testSetCorrectValue"));
-		suite.addTest(new TestNumber("testSetWrongValue"));
-		suite.addTest(new TestNumber("testGetCorrectRadix"));
-		suite.addTest(new TestNumber("testGetWrongRadix"));
-		suite.addTest(new TestNumber("testEquals"));
 		
-		return suite;
-	}
-	
-	//TESTS
-	
 	public void testSetCorrectValue() throws Exception {
 		li.set(10);
 	}
@@ -81,6 +63,10 @@ public class TestNumber extends TestCase {
 		assertNotNull(li);
 		assertTrue(li.equals(li));
 		assertFalse(li.equals(0));
+	}
+	
+	protected void tearDown() throws Exception {
+		li = null;
 	}
 }
 

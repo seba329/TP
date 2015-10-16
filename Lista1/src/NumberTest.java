@@ -18,7 +18,6 @@ private Number li;
 		li = new Number(16);
 	}
 	
-	//TESTS
 	@Test
 	public void testInit() throws Exception {
 		assertNotNull(li);
@@ -57,7 +56,7 @@ private Number li;
 	}
 	
 	@Ignore
-	public void Something_Really_Stupid_Or_Broken()
+	public void Something()
 	{
 		assertEquals(5,6);
 	}

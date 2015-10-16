@@ -1,6 +1,6 @@
 import junit.framework.TestCase;
 public class TestNumber extends TestCase {
-   //próba 2
+   //próba 3
 	private Number li;
 	
 	public TestNumber() {

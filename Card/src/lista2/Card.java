@@ -16,6 +16,6 @@ public class Card {
 		return suit;
 	}
 	public String getFullCard(){
-		return rank+" "+suit;
+		return rank+" of "+suit;
 	}
 }
